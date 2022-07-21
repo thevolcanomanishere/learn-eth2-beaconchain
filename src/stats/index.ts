@@ -1,6 +1,6 @@
 import { Validators } from "./Validators";
 import { AmountOfEth } from "./AmountOfEth";
 
-const StatsComponents = [Validators, AmountOfEth];
+const StatsComponents = [AmountOfEth, Validators];
 
 export default StatsComponents;

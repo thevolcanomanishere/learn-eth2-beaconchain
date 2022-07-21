@@ -5,7 +5,7 @@ interface IStatTitle {
 }
 
 const StatTitle = ({ title }: IStatTitle) => {
-  return <h3 className="underline">{title}</h3>;
+  return <h3 className="text-xl m-2 border-b">{title}</h3>;
 };
 
 export default StatTitle;

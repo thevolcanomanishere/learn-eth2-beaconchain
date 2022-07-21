@@ -20,9 +20,11 @@ const App = () => {
   return (
     <Provider value={client}>
       <div className="flex-row justify-center">
-        <h1 className="text-3xl font-bold">Ethereum Beacon Chain Stats</h1>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-4 mt-5">
-          {Stats.map((stat) => React.createElement(stat))}
+        <h1 className="text-3xl font-bold">Ethereum Beacon Chain Stats 📊</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-5">
+          {Stats.map((stat, index) => (
+            <div key={index}>{React.createElement(stat)}</div>
+          ))}
         </div>
       </div>
     </Provider>
